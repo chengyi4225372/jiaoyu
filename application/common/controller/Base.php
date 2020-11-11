@@ -8,24 +8,29 @@
 namespace app\common\controller;
 
 use think\Controller;
-use think\Request;
 
+/**
+ * Class Base
+ * @package app\common\controller
+ * 初始化基类控制器
+ */
 class Base extends Controller
 {
     protected $param;
 
 
-    public function initialize(Request $request)
+    public function initialize()
     {
         parent::initialize();
 
-        $this->initBase(); //初始化设置
+        $this->initRequestInfo(); //初始化设置
     }
 
     /**
      * 初始话框架设置
      */
-    public function initBase(){
+    public function initRequestInfo(){
+        define('SYS_DS_PROS'            , '/');
         defined('IS_POST')          or define('IS_POST',         $this->request->isPost());
         defined('IS_GET')           or define('IS_GET',          $this->request->isGet());
         defined('IS_AJAX')          or define('IS_AJAX',         $this->request->isAjax());

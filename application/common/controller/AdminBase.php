@@ -7,19 +7,13 @@
  */
 namespace app\common\controller;
 
+/**
+ * Class AdminBase
+ * @package app\common\controller
+ * 后台基类控制器
+ */
 class AdminBase extends Base
 {
 
-    public function initialize()
-    {
-        parent::initialize();
-
-
-    }
-
-
-    /**
-     *
-     */
 
 }

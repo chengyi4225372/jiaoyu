@@ -11,4 +11,14 @@ use app\common\controller\HomeBase;
 class Index extends HomeBase
 {
 
+    /**
+     * 首页
+     */
+     public function  index(){
+
+         return $this->fetch();
+     }
+
+
+
 }

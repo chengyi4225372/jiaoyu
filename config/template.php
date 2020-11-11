@@ -17,7 +17,7 @@ return [
     // 模板引擎类型 支持 php think 支持扩展
     'type'         => 'Think',
     // 模板路径
-    'view_path'    => '',
+    'view_path'    =>'',
     // 模板后缀
     'view_suffix'  => 'html',
     // 模板文件名分隔符
@@ -30,4 +30,15 @@ return [
     'taglib_begin' => '{',
     // 标签库标签结束标记
     'taglib_end'   => '}',
+
+    //视图文件替换
+    'tpl_replace_string'  =>  [
+        '_ADMIN_'  =>'/static/admin',
+        '_ASSETS_' => '/static/assets',
+    ],
+
+    //开启模板布局
+     'layout_on'     =>  true,
+     'layout_name'   =>  'layout',
+     'layout_item'   =>  '{__CONTENT__}',
 ];
