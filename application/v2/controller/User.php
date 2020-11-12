@@ -8,7 +8,7 @@
 namespace app\v2\controller;
 
 use app\common\controller\AdminBase;
-use app\common\validate\Admin;
+use app\common\validate\Base;
 
 /**
  * Class User
